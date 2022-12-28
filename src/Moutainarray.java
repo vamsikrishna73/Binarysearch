@@ -1,3 +1,5 @@
+//finding the peak element inn tha mountain array
+
 public class Moutainarray {
 
     public static void main(String[] args) {
