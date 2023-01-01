@@ -3,9 +3,14 @@ public class Rotatedarray {
     public static void main(String[] args) {
         int[] arr = {3,4,5,6,7,0,1,2};
         int[] arr2 = {1,2,3,4,5,6,7,8,9};
+        int[] arr3 = {2,2,2,2,3,4,5,0,1,2,2,2};
+        int[] arr4 = {2,2,2,2,3,5,1,0};
         System.out.println(getpivot(arr));
         System.out.println(search(arr,1));
         System.out.println(search(arr2,8));
+        System.out.println(getpivot(arr2));
+        System.out.println(getpivot(arr3));
+        System.out.println(getpivot(arr4));
     }
 
 
