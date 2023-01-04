@@ -3,13 +3,13 @@
 public class Duplicaterotatedarray {
 
     public static void main(String[] args) {
-        int[] arr = {5,6,7,8,0,3,2,1};
-        int[] arr2 = {5,6,7,8,0,32,13,45};
+        int[] arr = {5,6,7,8,0,1,2,3};
+        int[] arr2 = {5,6,7,8,32,37,45};
         int[] arr3 = {2,2,2,9,2,2,2};
-        int[] arr4 = {2,2,2,2,3,5,1,3};
+        int[] arr4 = {2,2,2,2,3,5,1,2};
         System.out.println(getpivot(arr3));
         System.out.println(search(arr,8));
-        System.out.println(search(arr2,13));
+        System.out.println(search(arr2,32));
         System.out.println(findPivotWithDuplicates(arr4));
     }
 
@@ -78,9 +78,9 @@ public class Duplicaterotatedarray {
                 }
                 end--;
             }
-            // left side is sorted, so pivot should be in right
+
             else if(arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end])) {
-                start = mid + 1;
+                start = mid + 1;        // left side is sorted, so pivot should be in right
             } else {
                 end = mid - 1;
             }

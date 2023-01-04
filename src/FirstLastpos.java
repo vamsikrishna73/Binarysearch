@@ -3,7 +3,11 @@ import java.util.Arrays;
 public class FirstLastpos{
     public static void main(String[] args){
         int[] numbs = {1,2,3,4,5,5,5,5,5,5,6,7,8,9};
+        int[] numb = {1,2,3,4,5,6,7,8,9};
+
         System.out.println(Arrays.toString(bounds(numbs,5)));
+        System.out.println(Arrays.toString(bounds(numb ,5)));
+
     }
 
     static int[] bounds(int[] array,int target){
