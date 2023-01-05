@@ -22,6 +22,7 @@ public class SplitarrayLargestsum {
     //the given array might not be sorted--->doesnt make any difference
     //the required sum exists bw two bounds....1)lower bound = max element of array(in the case m == array.length)
                                                 //2)upper bound = sum of all elements in the array
+    //upper bound ---->in the case when m == 1;
     //we use binary search to get the answer--->we split the array based on the value of mid
     //we do this until we reach a point where start == mid == end
     //at every step we check if the no of sub arrays are exceeding 'm' or not and update the 'mid' value
